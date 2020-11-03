@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - DBMS</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link href="~/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow   ">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="App" asp-action="Index">DBMS</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse navbar-right">
+                    <ul class="navbar-nav flex-grow-2 navbar-right">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="App" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="sidebar-container">
+
+        <div class=" row">
+
+            <div class="sidebar-logo">
+                <img src="~/TshimologongLogo.png" alt="logo" class="class-logo" />
+                <span class="divider"></span>
+                <span>  Tshimologong Database</span>
+            </div>
+
+        </div>
+        <ul class="sidebar-navigation">
+            <li class="header"></li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-home" aria-hidden="true"></i> FACULTIES
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-tachometer" aria-hidden="true"></i> PROGRAMME
+                </a>
+            </li>
+            <li class="header"></li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-users" aria-hidden="true"></i>  START-UPS
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-cog" aria-hidden="true"></i> BENEFICIARIES
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i> REPORTS
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content-container">
+
+        <div class="container-fluid row">
+
+
+            <div class="jumbotron col-md-12 offset-md-1 ">
+                <div class="container">
+                    <main role="main" class="pb-3">
+                        @RenderBody()
+                    </main>
+                </div>
+            </div>
+
+        </div>
+    </div>
+  
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2020 - DBMS - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+	"ConnectionStrings": {
+		"DBMSConnectionString": "Data Source=LAPTOP-9D3KF5D6;Database=DbmsDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;MultipleActiveResultSets=true"
+	}
+
+
+}
